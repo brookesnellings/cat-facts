@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 2em;
+}
+
+#get-fact {
+    margin-bottom: 1em;
+    font-size: 3em;
+    background-color:white;
+    text-decoration: none;
+    border-color: white;
+    cursor: pointer;
+}
+
+button:focus {
+    outline:0;
+}
+
+#cat-fact {
+    font-size: 1.5em;
+    margin-left: 8em;
+    margin-right: 8em;
+}
