@@ -1,13 +1,18 @@
 
 
 // Click handler
-document.querySelector('.get-fact').onclick = () => {
+document.querySelector('.getFact').onclick = () => {
     // API request
     fetch('https://catfact.ninja/fact')
         .then((response) => {
             return response.json();
         })
         .then(data => {
-            document.querySelector('.cat-fact').innerHTML = data.fact
+            let fact = document.createElement('div')
+            fact.className = 'catFact'
+            fact.innerHTML = data.fact;
+            let el = document.getElementsByClassName('factContainer')[0];
+            el.appendChild(fact);
+
         })
 }
