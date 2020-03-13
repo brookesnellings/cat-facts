@@ -12,7 +12,7 @@ document.querySelector('.getFact').onclick = () => {
             fact.className = 'catFact'
             fact.innerHTML = data.fact;
             let el = document.getElementsByClassName('factContainer')[0];
-            el.appendChild(fact);
+            el.prepend(fact);
 
         })
 }
