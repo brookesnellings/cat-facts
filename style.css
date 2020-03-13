@@ -21,9 +21,21 @@ button:focus {
     outline:0;
 }
 
+.factContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .catFact {
-    align-self: center;
     justify-content: center;
     font-size: 1.5rem;
     margin: 2rem;
+    padding: 1rem;
+    border-style: solid;
+    border-color: black;
+    border-radius: 1rem;
+    width: 450px;
+    height: 270px;
 }
